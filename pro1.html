@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    </script>
+
+    <title>Projet1</title>
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+        }
+        ul li{
+            margin: 1px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            padding: 7px;
+        }
+        .border{
+            border: 1px solid green;
+            width: 100%;
+            height: 12px;
+            background-color: green;
+            margin-top: -27px;
+        }
+        .select{
+            margin-bottom: 20px;
+        }
+        .a{
+            justify-content: space-between;
+        }
+        .left{
+            border: 1px solid rgb(236, 231, 231);
+            background-color: rgb(236, 231, 231);
+            margin-right: 190px;
+            width: 10px;
+            height: 190px;
+        }
+        .b{
+            margin: 80px;
+            justify-content: space-between;
+        }
+
+        
+        .av{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=" a d-flex ">
+        <h4>Institut Specialise De Technologie Appliquée Ait Melloul</h4>
+        <img src="https://th.bing.com/th/id/R.ba885a59c2ddc1efa93d2f308cf3b99c?rik=rmnfVLmvFL14Bw&pid=ImgRaw&r=0" width="50px" height="50px">
+    </div>
+    <div class="navbar d-flex">
+        <ul>
+            <li>Evaluation</li>
+            <li class="av">Avancement</li>
+            <li>Changer EFP</li>
+            <li>Mon compte</li>
+            <li>Déconnexion</li>
+        </ul>
+        <select class="select bg-light">
+            <option value="">2022/2023</option>
+            <option value="">2021/2022</option>
+        </select>
+    </div>
+        <div class=" border"></div>
+  
+    <p class="pt-4 m-2">Cahier de textes |<span class="text-primary"> Retour</span></p>
+    <hr/>
+    <div class="container d-flex ">
+        <div class="left">
+            <div class="bg-dark border-dark text-dark">1</div>
+            <div class="bg-light border-white text-light">1</div>
+            <div class="bg-light border-light text-light">1</div>
+            <div class="bg-light border-white text-light">1</div>
+            <div class="bg-light border-light text-light">1</div>
+            <div class="bg-dark border-dark text-dark">1</div>
+            <div class="bg-light border-light text-light">1</div>
+            <div class="bg-light border-white text-light">1</div>
+        </div>
+        <div class="right justify-content-between ">
+            <div class=" pb-5 m-2 text-center">
+                Filière : <select>
+                    <option> TS dev.digital (diplomante)</option>
+                    <option>TS genie civil (diplomante)</option>
+                    <option>TS gestion des entreprises (diplomante)</option>
+                </select>
+                &nbsp;&nbsp;
+                Module : <select>
+                    <option> M104-Sites Web statiques</option>
+                    <option> M105-Sites Web statiques</option>
+                    <option> M106-Sites Web statiques</option>
+                </select>
+            </div>
+        
+
+            
+            <h5>NOUVELLE SEANCE : </h5>
+            <hr/>
+            <div class=" b d-flex m-3 ">
+                <div class="d-flex">
+                    <p>Etls compétence<br>(objectifs)*300<br>caractères:</p>&nbsp;&nbsp;
+                    <textarea  rows="3" cols="30" minlength="10" maxlength="30"></textarea>   
+                </div>
+                    <div >
+                    Type de cours :
+                    <select>
+                        <option>------------choisissez------------</option>
+                        <option value="">c1</option>
+                        <option value="">c2</option>
+                    </select>
+                </div>
+            </div>
+            <hr/>
+            <div class="d-flex justify-content-between p-3">
+                <div >
+                    Date de la séance:&nbsp;
+                    <select >
+                        <option>-------------choisissez------------</option>
+                        <option value="">d1</option>
+                        <option value="">d2</option>
+                    </select>
+                </div>
+                    <div >
+                    Eff.Absents:&nbsp;
+                    <select >
+                        <option>----------(0) Stagiaires-----------</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select> 
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between p-3 ">
+                <div >
+                    Heure Démmaree:&nbsp;
+                    <select>
+                        <option>------------quel heure ?----------</option>
+                        <option value="">8.00</option>
+                        <option value="">10.00</option>
+                    </select>
+                </div>
+            
+                <div>
+                    Heure Final: &nbsp;
+                    <select>
+                        <option>----------quel heure ?----------</option>
+                        <option value="">1.00</option>
+                        <option value="">2.00</option>
+                    </select>
+                </div>
+            </div>
+        <hr/>
+        <div class="d-flex justify-content-between p-3">
+            <div>
+                Commentaire :                     
+                <textarea  rows="3" cols="30" minlength="10" maxlength="30"></textarea> 
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+                Liste Absents :                     
+                <textarea  rows="3" cols="30" minlength="10" maxlength="30"></textarea>
+            </div>
+            
+        </div>
+        <div class=" end float-start pt-3">
+        Type de Séance : <input type="radio" name="a" checked>&nbsp;&nbsp;Cours&nbsp;&nbsp;<input type="radio" name="a">&nbsp;&nbsp;CC&nbsp;&nbsp;<input type="radio" name="a">&nbsp;&nbsp;EFM&nbsp;&nbsp;
+        <br>
+        <br>
+        <button class="bg-primary" type="button" data-bs-toggle="modal" data-bs-target="#m">Valider la séance</button>
+        </div>
+        </div>
+    </div>
+
+
+    <div id="m" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header ">
+                <h4>Nouvelle séance </h4>
+            </div>
+            <div class="modal-body">
+             <form>
+              <p>Elts de la compétence : abc</p>
+              <p>Mode : Séance présentielle</p>
+              <p>Sous-Groupe : DEV101</p>
+              <p>Date de la séance : mardi.10/01/2023</p>
+              <p>Heure Début : 8:00</p>
+              <p>Heure Fin : 8:30</p>
+              <div class="float-end">
+              <button class="btn btn-sm btn-primary"><i class="fa-solid fa-xmark"></i>Annuler</button>
+              <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-check"></i>Confirmer</button>
+              </div>
+            </form>
+            </div>
+      
+</body>
+</html>
